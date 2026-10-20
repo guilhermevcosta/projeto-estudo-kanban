@@ -1,0 +1,19 @@
+# Correção do envio de SMS
+
+## Problema identificado
+O envio de SMS para determinadas operadoras falha, impedindo que alguns clientes recebam o token de recuperação de senha.
+
+## Correção proposta
+- Verificar as respostas retornadas pelo serviço de envio de SMS.
+- Tratar falhas específicas das operadoras afetadas.
+- Registrar erros técnicos sem expor tokens ou dados pessoais.
+- Permitir novas tentativas controladas quando apropriado.
+
+## Critérios de validação
+- [ ] Testar o envio para as operadoras afetadas.
+- [ ] Confirmar o tratamento das respostas de erro.
+- [ ] Verificar que os registros não expõem dados sensíveis.
+- [ ] Executar testes de regressão.
+
+## Observação
+Este documento registra uma correção proposta para fins acadêmicos. A correção não foi implementada nem testada em um serviço real de SMS.
